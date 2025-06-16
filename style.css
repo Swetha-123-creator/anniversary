@@ -1,102 +1,82 @@
 body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
   margin: 0;
-  font-family: 'Georgia', serif;
-  background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
-  color: #4b2e2e;
-  text-align: center;
-  overflow-x: hidden;
+  padding: 0;
+  color: #333;
 }
 
 .unlock {
-  padding-top: 150px;
+  text-align: center;
+  margin-top: 15%;
+  padding: 20px;
 }
 
-input {
+input[type="password"] {
   padding: 10px;
-  font-size: 18px;
+  font-size: 16px;
+  width: 250px;
+  margin: 10px;
 }
 
 button {
+  padding: 10px 20px;
+  font-size: 16px;
   background-color: #ff69b4;
   color: white;
   border: none;
-  padding: 10px 20px;
-  font-size: 18px;
-  margin-left: 10px;
   cursor: pointer;
   border-radius: 8px;
 }
 
 .chapter {
-  padding: 60px 20px;
-  animation: fadeIn 3s ease-in;
-}
-
-.typewriter {
-  display: inline-block;
-  border-right: 3px solid #000;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 20px;
-  width: 0;
-  animation: typing 4s steps(40, end) forwards, blink 1s infinite;
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blink {
-  50% { border-color: transparent; }
+  padding: 40px;
+  text-align: center;
+  animation: fadeIn 2s ease-in;
 }
 
 .carousel {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding-top: 20px;
+  gap: 15px;
 }
 
 .carousel img {
   width: 200px;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #bbb;
-  transition: transform 0.3s;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.carousel img:hover {
-  transform: scale(1.05);
+.typewriter {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .gift-box {
-  margin-top: 40px;
-  background: #fff;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 0 20px pink;
+  margin-top: 30px;
 }
 
 .open-btn {
   display: inline-block;
   padding: 15px 25px;
-  background: #ff1493;
+  font-size: 18px;
   color: white;
-  font-size: 20px;
-  border-radius: 30px;
+  background: #ff1493;
   text-decoration: none;
+  border-radius: 10px;
+  margin-top: 15px;
   animation: pulse 1.5s infinite;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(255,105,180, 0.7); }
-  70% { box-shadow: 0 0 0 15px rgba(255,105,180, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(255,105,180, 0); }
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
 }
