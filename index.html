@@ -6,7 +6,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <<script src="script.js"
+
+  <!-- 🔒 Unlock Page -->
   <div id="unlockPage" class="unlock">
     <h2>💌 A Secret Page Just for You</h2>
     <p>Enter the magic word to begin our story...</p>
@@ -14,14 +15,20 @@
     <button onclick="unlock()">Unlock</button>
   </div>
 
-  <div id="mainPage" style="display:none;">
+  <!-- 🎉 Main Content -->
+  <div id="mainPage" style="display: none;">
+    
+    <!-- Background Music -->
     <audio id="bgMusic" autoplay muted loop>
       <source src="song.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
     </audio>
 
+    <!-- Chapter 1 -->
     <div class="chapter" id="chapter1">
       <h1>📖 Chapter 1: When We First Met</h1>
-      <p class="typewriter">"I still remember that day…<br>
+      <p class="typewriter">
+        "I still remember that day…<br>
         You and your friends were seated on the stone bench and called us over as part of a light ragging.<br>
         One of the boys asked me to step forward, gently asked my name and a few details.<br>
         Then came the teasing — your friends smiled and said,<br>
@@ -31,6 +38,7 @@
       </p>
     </div>
 
+    <!-- Chapter 2 -->
     <div class="chapter" id="chapter2">
       <h1>💖 Chapter 2: Us, Through the Seasons</h1>
       <div class="carousel">
@@ -40,9 +48,11 @@
       </div>
     </div>
 
+    <!-- Chapter 3 -->
     <div class="chapter" id="chapter3">
       <h1>🌹 Chapter 3: Today, 3 Years Later</h1>
-      <p class="typewriter">Three years of laughter, adventures, tears, and endless love.<br>
+      <p class="typewriter">
+        Three years of laughter, adventures, tears, and endless love.<br>
         After all the fights and ignoring each other, we always end up with so much love again.<br>
         So many adis happened just because of that third person 😂.<br>
         Still, we’re the happiest in our little world.<br>
@@ -52,17 +62,16 @@
       </p>
     </div>
 
+    <!-- Final Chapter -->
     <div class="chapter" id="gift">
       <h1>🎁 Final Chapter: Your Surprise</h1>
       <div class="gift-box">
         <p>Click to open your final surprise</p>
-        <a href="#" onclick="loadSurprise()" class="open-btn">💝 Open Gift 💝</a>
-
+        <a href="surprise.html" class="open-btn">💝 Open Gift 💝</a>
       </div>
     </div>
   </div>
 
- 
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
