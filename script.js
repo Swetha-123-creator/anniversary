@@ -1,14 +1,17 @@
 function unlock() {
-  const input = document.getElementById("unlockPassword").value;
-  const correct = "foreverus"; // Change as needed
-  if (input.toLowerCase() === correct) {
+  const password = document.getElementById("unlockPassword").value;
+  if (password === "foreverus") { // 🔁 Replace with your real password
     document.getElementById("unlockPage").style.display = "none";
     document.getElementById("mainPage").style.display = "block";
-  } else {
-    alert("That's not the magic word, my love 💫");
-     const music = document.getElementById("bgMusic");
+
+    // ✅ Unmute and play the music after user interaction
+    const music = document.getElementById("bgMusic");
     music.muted = false;
-    music.play();
-  } 
+    music.play().catch((e) => {
+      console.log("Autoplay blocked. Interaction needed.", e);
+    });
+  } else {
+    alert("Oops! Try again 💌");
   }
 }
+
