@@ -2,21 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Your Surprise 💝</title>
-  <link rel="stylesheet" href="style.css">
+  <title>My Gift for You 💝</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffe6f0, #fff0f5);
+      color: #333;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .gift-box {
+      background-color: #fff0f6;
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #ff1493;
+    }
+
+    p {
+      font-size: 20px;
+      margin-top: 20px;
+      line-height: 1.7;
+    }
+
+    img {
+      width: 200px;
+      margin-top: 30px;
+      border-radius: 50%;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .back-btn {
+      margin-top: 40px;
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 14px;
+      font-size: 16px;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .back-btn:hover {
+      background-color: #ff1493;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-  <h1>💌 Your Surprise Is Here!</h1>
-  <p>You’ve made it to the end of the story... but this is just the beginning 💖</p>
-  <img src="final_surprise.jpg" alt="Surprise Image" style="width: 80%; border-radius: 20px; box-shadow: 0 0 15px pink;">
-  <br><br>
-  <a href="index.html" class="open-btn">🔙 Back to Story</a>
-
-  <script>
-    // Continue music if unlocked
-    if (localStorage.getItem("unlocked") !== "true") {
-      location.href = "index.html";
-    }
-  </script>
+  <div class="gift-box">
+    <h1>🎁 My Love, My Gift 💌</h1>
+    <p>
+      This is more than a surprise, it’s a celebration of **you** —<br>
+      Your smile, your love, your presence in my life.<br><br>
+      Thank you for loving me every single day.<br>
+      Here's to **forever**, hand in hand 💕
+    </p>
+    <img src="gift.jpg" alt="Our Memory"> <!-- Replace with a cute or romantic photo -->
+    <br>
+    <a class="back-btn" href="index.html">← Back to Our Story</a>
+  </div>
 </body>
 </html>
