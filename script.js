@@ -8,18 +8,24 @@ function unlock() {
 
     const bgMusic = document.getElementById("bgMusic");
     bgMusic.muted = false;
-    bgMusic.play().catch(error => {
-      console.warn("Autoplay blocked until user interacts:", error);
+    bgMusic.play().catch(err => {
+      console.warn("Autoplay may be blocked until interaction", err);
     });
+
+    // Remember user unlocked
+    localStorage.setItem("unlocked", "true");
   } else {
     alert("Oops! Try again 💌");
   }
 }
 
-function openSurprise() {
-  document.getElementById("surpriseModal").style.display = "block";
-}
-
-function closeSurprise() {
-  document.getElementById("surpriseModal").style.display = "none";
-}
+// Auto-unlock if already unlocked
+window.onload = () => {
+  if (localStorage.getItem("unlocked") === "true") {
+    document.getElementById("unlockPage").style.display = "none";
+    document.getElementById("mainPage").style.display = "block";
+    const bgMusic = document.getElementById("bgMusic");
+    bgMusic.muted = false;
+    bgMusic.play().catch(err => console.warn("Autoplay blocked:", err));
+  }
+};
