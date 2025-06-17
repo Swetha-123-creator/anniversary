@@ -1,87 +1,92 @@
+/* General Page Styling */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fff0f5;
+  background: #fff0f5;
   color: #333;
-  margin: 0;
-  padding: 0;
+  padding: 20px;
   text-align: center;
+  transition: background 0.5s;
 }
 
-.unlock {
-  margin-top: 100px;
+/* Shared Styling for Sections */
+.unlock, .chapter, .gift-box {
+  margin: 20px auto;
+  max-width: 700px;
+  background: #ffeef3;
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: 0 4px 20px rgba(255, 182, 193, 0.6);
+  transition: transform 0.3s ease;
 }
 
-.chapter {
-  padding: 50px 20px;
+.unlock:hover, .chapter:hover, .gift-box:hover {
+  transform: scale(1.02);
 }
 
-.carousel img {
-  width: 200px;
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+/* Input and Button */
+input, button {
+  padding: 12px 15px;
+  font-size: 16px;
+  margin-top: 15px;
+  border: 2px solid #ffb6c1;
+  border-radius: 8px;
+  outline: none;
 }
 
-.typewriter {
-  font-family: 'Courier New', monospace;
-  white-space: pre-line;
-  font-size: 18px;
-  margin-top: 20px;
+input::placeholder {
+  color: #999;
 }
 
-/* Gift Button */
-.open-btn {
-  padding: 12px 20px;
-  font-size: 18px;
+button {
   background-color: #ff69b4;
   color: white;
-  border: none;
-  border-radius: 10px;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s;
-}
-.open-btn:hover {
-  background-color: #e91e63;
+  transition: background 0.3s;
 }
 
-/* 🎁 Modal Styles */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 10;
-  padding-top: 80px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.6);
+button:hover {
+  background-color: #ff1493;
 }
 
-.modal-content {
-  background-color: white;
-  margin: auto;
-  padding: 20px;
+/* Carousel Images */
+.carousel img {
+  width: 220px;
+  height: auto;
+  margin: 12px;
   border-radius: 12px;
-  width: 90%;
-  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+  transition: transform 0.3s;
+}
+
+.carousel img:hover {
+  transform: scale(1.05);
+}
+
+/* Typewriter Paragraph */
+.typewriter {
+  text-align: left;
+  font-family: 'Georgia', serif;
+  line-height: 1.8;
+  font-size: 17px;
   color: #444;
 }
 
-.modal-img {
-  width: 100%;
-  max-width: 300px;
-  margin-top: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+/* Final Gift Button */
+.open-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ff69b4;
+  color: white;
+  text-decoration: none;
+  border-radius: 16px;
+  margin-top: 20px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+  transition: background 0.3s, transform 0.2s;
 }
 
-.close {
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}
-.close:hover {
-  color: #000;
+.open-btn:hover {
+  background: #ff1493;
+  transform: scale(1.05);
 }
