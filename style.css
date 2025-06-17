@@ -1,81 +1,100 @@
+/* Improved CSS for the Love Anniversary Page */
+
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #ffe4e1, #fff0f5);
   margin: 0;
-  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff0f5;
   color: #333;
+  line-height: 1.6;
 }
 
 .unlock {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 100vh;
-  background: #fff0f5;
+  background: linear-gradient(135deg, #f9c5d1, #fbc2eb);
   text-align: center;
   padding: 20px;
 }
 
-.unlock input {
-  padding: 10px;
+.unlock h2 {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.unlock p {
+  font-size: 1.2em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.unlock input[type="password"] {
+  padding: 12px;
   font-size: 16px;
-  margin-top: 10px;
-  border: 2px solid #ff69b4;
-  border-radius: 6px;
+  border: none;
+  border-radius: 30px;
   outline: none;
+  width: 250px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .unlock button {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: #ff69b4;
-  color: white;
+  padding: 10px 30px;
+  background-color: #ff69b4;
   border: none;
-  border-radius: 8px;
+  border-radius: 30px;
+  color: #fff;
   font-size: 16px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 .unlock button:hover {
-  background: #ff1493;
-}
-
-#mainPage {
-  display: none;
-  padding: 30px;
+  background-color: #ff1493;
 }
 
 .chapter {
-  margin: 40px auto;
-  padding: 30px;
-  background: #fff;
-  border: 2px solid #ffc0cb;
-  border-radius: 15px;
-  box-shadow: 0 6px 16px rgba(255, 105, 180, 0.3);
-  max-width: 800px;
+  padding: 60px 20px;
   text-align: center;
+  max-width: 800px;
+  margin: auto;
 }
 
 .chapter h1 {
-  color: #d63384;
+  color: #ff1493;
+  font-size: 2em;
   margin-bottom: 20px;
+}
+
+.typewriter {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  white-space: pre-wrap;
+  margin: 0 auto;
+  max-width: 750px;
+  color: #444;
+  line-height: 1.8;
 }
 
 .carousel {
   display: flex;
   justify-content: center;
   gap: 15px;
-  overflow-x: auto;
-  padding: 10px 0;
+  flex-wrap: wrap;
+  padding: 20px 0;
 }
 
 .carousel img {
-  width: 220px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
 }
 
@@ -83,36 +102,22 @@ body {
   transform: scale(1.05);
 }
 
-.typewriter {
-  font-size: 18px;
-  line-height: 1.6;
-  text-align: left;
-  padding: 0 10px;
-  color: #444;
-}
-
 .gift-box {
-  padding: 25px;
-  background: #fff0f5;
-  border: 2px dashed #ff69b4;
-  border-radius: 12px;
-  margin-top: 25px;
-  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.2);
+  margin-top: 30px;
 }
 
 .open-btn {
+  display: inline-block;
   padding: 12px 24px;
-  background: #ff69b4;
-  color: white;
+  background-color: #ff69b4;
+  color: #fff;
+  text-decoration: none;
   font-size: 18px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 15px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
 }
 
 .open-btn:hover {
-  background: #ff1493;
-  transform: scale(1.05);
+  background-color: #ff1493;
 }
