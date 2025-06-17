@@ -1,18 +1,14 @@
-/* -------------------------------------
-   💖 Base Styles
--------------------------------------- */
+/* Base Styles */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #ffe6f0; /* Baby pink */
+  background-color: #ffe6f0;
   margin: 0;
   padding: 0;
   color: #333;
   text-align: center;
 }
 
-/* -------------------------------------
-   🔐 Unlock Section
--------------------------------------- */
+/* Unlock Page */
 .unlock {
   padding: 30px;
   margin-top: 15vh;
@@ -34,10 +30,6 @@ input[type="password"] {
   outline: none;
 }
 
-input[type="password"]::placeholder {
-  color: #999;
-}
-
 button {
   padding: 12px 20px;
   font-size: 16px;
@@ -54,9 +46,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* -------------------------------------
-   💌 Chapter Section
--------------------------------------- */
+/* Chapters */
 .chapter {
   padding: 40px 20px;
   background-color: #fff7fb;
@@ -67,9 +57,6 @@ button:hover {
   animation: fadeIn 2s ease-in;
 }
 
-/* -------------------------------------
-   ✍️ Romantic Paragraph
--------------------------------------- */
 .typewriter {
   font-style: italic;
   font-size: 18px;
@@ -79,9 +66,7 @@ button:hover {
   margin-top: 20px;
 }
 
-/* -------------------------------------
-   🖼️ Image Carousel – Same Line and Distance
--------------------------------------- */
+/* Carousel */
 .carousel {
   display: flex;
   justify-content: center;
@@ -114,13 +99,7 @@ button:hover {
   transform: scale(1.08);
 }
 
-/* -------------------------------------
-   🎁 Gift Box Button
--------------------------------------- */
-.gift-box {
-  margin-top: 40px;
-}
-
+/* Gift Button */
 .open-btn {
   display: inline-block;
   padding: 14px 28px;
@@ -140,9 +119,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* -------------------------------------
-   ✨ Animations
--------------------------------------- */
+/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
