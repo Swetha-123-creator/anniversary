@@ -1,123 +1,121 @@
-/* Improved CSS for the Love Anniversary Page */
-
-body {
+/* General Reset */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff0f5;
-  color: #333;
-  line-height: 1.6;
 }
 
-.unlock {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #f9c5d1, #fbc2eb);
-  text-align: center;
+body {
+  background: linear-gradient(to right, #ffdee9, #b5fffc);
+  color: #333;
+  line-height: 1.6;
   padding: 20px;
 }
 
+/* Unlock Section */
+.unlock {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
 .unlock h2 {
-  font-size: 2em;
-  color: #fff;
+  font-size: 24px;
   margin-bottom: 10px;
+  color: #d63384;
 }
 
 .unlock p {
-  font-size: 1.2em;
-  color: #fff;
+  font-size: 16px;
   margin-bottom: 20px;
 }
 
 .unlock input[type="password"] {
   padding: 12px;
-  font-size: 16px;
-  border: none;
-  border-radius: 30px;
-  outline: none;
-  width: 250px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 12px;
   margin-bottom: 15px;
-  text-align: center;
+  font-size: 16px;
 }
 
 .unlock button {
-  padding: 10px 30px;
-  background-color: #ff69b4;
-  border: none;
-  border-radius: 30px;
-  color: #fff;
+  padding: 10px 20px;
   font-size: 16px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s;
 }
 
 .unlock button:hover {
   background-color: #ff1493;
 }
 
+/* Chapter Styling (No Boxes) */
 .chapter {
-  padding: 60px 20px;
-  text-align: center;
   max-width: 800px;
-  margin: auto;
+  margin: 60px auto;
+  padding: 10px 20px;
 }
 
 .chapter h1 {
-  color: #ff1493;
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size: 28px;
+  color: #e91e63;
+  margin-bottom: 10px;
 }
 
 .typewriter {
-  font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
-  white-space: pre-wrap;
-  margin: 0 auto;
-  max-width: 750px;
-  color: #444;
   line-height: 1.8;
+  white-space: pre-line;
 }
 
+/* Carousel */
 .carousel {
   display: flex;
+  gap: 20px;
   justify-content: center;
-  gap: 15px;
   flex-wrap: wrap;
-  padding: 20px 0;
+  margin-top: 20px;
 }
 
 .carousel img {
   width: 200px;
-  height: 200px;
-  object-fit: cover;
+  height: auto;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
 }
 
 .carousel img:hover {
   transform: scale(1.05);
 }
 
+/* Gift Button */
 .gift-box {
+  text-align: center;
   margin-top: 30px;
 }
 
 .open-btn {
   display: inline-block;
-  padding: 12px 24px;
-  background-color: #ff69b4;
-  color: #fff;
+  padding: 12px 25px;
+  background-color: #f06292;
+  color: white;
   text-decoration: none;
   font-size: 18px;
-  border-radius: 30px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  transition: background 0.3s ease;
+  border-radius: 15px;
+  transition: background-color 0.3s;
 }
 
 .open-btn:hover {
-  background-color: #ff1493;
+  background-color: #d81b60;
 }
