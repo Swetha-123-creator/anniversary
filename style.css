@@ -1,132 +1,68 @@
-/* Base Styles */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #ffe6f0;
+  background-color: #fff0f5;
   margin: 0;
   padding: 0;
-  color: #333;
+}
+
+.unlock {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#mainPage {
+  display: none;
+  padding: 30px;
+}
+
+.chapter {
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffe4e1;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
   text-align: center;
 }
 
-/* Unlock Page */
-.unlock {
-  padding: 30px;
-  margin-top: 15vh;
-  background-color: #fff0f6;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(255, 105, 180, 0.3);
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-input[type="password"] {
-  padding: 12px;
-  font-size: 16px;
-  width: 250px;
-  margin: 10px;
-  border-radius: 10px;
-  border: 2px solid #ffb6c1;
-  outline: none;
-}
-
-button {
-  padding: 12px 20px;
-  font-size: 16px;
-  background-color: #ff69b4;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-button:hover {
-  background-color: #ff1493;
-  transform: scale(1.05);
-}
-
-/* Chapters */
-.chapter {
-  padding: 40px 20px;
-  background-color: #fff7fb;
-  margin: 40px auto;
-  max-width: 900px;
-  border-radius: 20px;
-  box-shadow: 0 6px 24px rgba(255, 192, 203, 0.35);
-  animation: fadeIn 2s ease-in;
-}
-
-.typewriter {
-  font-style: italic;
-  font-size: 18px;
-  line-height: 1.7;
-  color: #444;
-  text-align: left;
-  margin-top: 20px;
-}
-
-/* Carousel */
 .carousel {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: nowrap;
+  gap: 10px;
   overflow-x: auto;
-  padding: 20px 0;
-}
-
-.carousel::-webkit-scrollbar {
-  height: 8px;
-}
-
-.carousel::-webkit-scrollbar-thumb {
-  background-color: #ffb6c1;
-  border-radius: 20px;
+  margin-top: 20px;
 }
 
 .carousel img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s;
-  flex-shrink: 0;
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
 }
 
-.carousel img:hover {
-  transform: scale(1.08);
-}
-
-/* Gift Button */
-.open-btn {
-  display: inline-block;
-  padding: 14px 28px;
+.typewriter {
   font-size: 18px;
-  color: white;
+  line-height: 1.6;
+  color: #333;
+}
+
+.gift-box {
+  padding: 20px;
+  background: #fff;
+  border: 2px dashed #ff69b4;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.open-btn {
+  padding: 10px 20px;
   background: #ff69b4;
-  text-decoration: none;
-  border-radius: 16px;
-  margin-top: 25px;
-  animation: pulse 1.5s infinite;
-  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.4);
-  transition: transform 0.2s;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .open-btn:hover {
-  background-color: #ff1493;
-  transform: scale(1.05);
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.08); }
-  100% { transform: scale(1); }
+  background: #ff1493;
 }
