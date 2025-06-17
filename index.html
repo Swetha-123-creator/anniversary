@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,14 +16,12 @@
   </div>
 
   <!-- 🎉 Main Content -->
-  <!-- Background Music -->
-<audio id="bgMusic" autoplay loop muted>
-  <source src="song.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+  <div id="mainPage">
+    <audio id="bgMusic" autoplay loop muted>
+      <source src="song.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
 
-
-    <!-- Chapter 1 -->
     <div class="chapter">
       <h1>📖 Chapter 1: When We First Met</h1>
       <p class="typewriter">
@@ -35,17 +34,15 @@
       </p>
     </div>
 
-    <!-- Chapter 2 -->
     <div class="chapter">
       <h1>💖 Chapter 2: Us, Through the Seasons</h1>
       <div class="carousel">
-        <img src="im1.jpg" alt="Memory 1">
-        <img src="im2.jpg" alt="Memory 2">
-        <img src="im3.jpg" alt="Memory 3">
+        <img src="im4.jpg" alt="Memory 1">
+        <img src="im3.jpg" alt="Memory 2">
+        <img src="im1.jpg" alt="Memory 3">
       </div>
     </div>
 
-    <!-- Chapter 3 -->
     <div class="chapter">
       <h1>🌹 Chapter 3: Today, 3 Years Later</h1>
       <p class="typewriter">
@@ -56,13 +53,11 @@
       </p>
     </div>
 
-    <!-- Final Chapter -->
     <div class="chapter" id="gift">
       <h1>🎁 Final Chapter: Your Surprise</h1>
       <div class="gift-box">
         <p>Click to open your final surprise</p>
-        <a href="#" class="open-btn" onclick="window.open('surprise.html', 'Surprise', 'width=600,height=600'); return false;">💝 Open Gift 💝</a>
-
+        <button onclick="showSurprise()" class="open-btn">💝 Open Gift 💝</button>
       </div>
     </div>
   </div>
