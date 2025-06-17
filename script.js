@@ -1,50 +1,25 @@
-// 🔓 Unlock Function
 function unlock() {
   const passwordInput = document.getElementById("unlockPassword").value;
-  const correctPassword = "26062003"; // Set your password here
+  const correctPassword = "26062003";
 
   if (passwordInput === correctPassword) {
-    // Mark that user has unlocked
-    localStorage.setItem("unlocked", "true");
-
-    // Show main content
     document.getElementById("unlockPage").style.display = "none";
     document.getElementById("mainPage").style.display = "block";
 
-    // Play background music
     const bgMusic = document.getElementById("bgMusic");
     bgMusic.muted = false;
-    bgMusic.play().catch(err => {
-      console.warn("Autoplay may be blocked:", err);
+    bgMusic.play().catch(error => {
+      console.warn("Autoplay blocked until user interacts:", error);
     });
-
-    // Mark that music should be playing on next page
-    localStorage.setItem("musicPlaying", "true");
   } else {
     alert("Oops! Try again 💌");
   }
 }
 
-// 🎵 Auto-play music on page load if unlocked
-window.addEventListener("DOMContentLoaded", () => {
-  const unlocked = localStorage.getItem("unlocked") === "true";
-  const bgMusic = document.getElementById("bgMusic");
+function openSurprise() {
+  document.getElementById("surpriseModal").style.display = "block";
+}
 
-  if (unlocked) {
-    // Show main content directly if already unlocked
-    if (document.getElementById("unlockPage")) {
-      document.getElementById("unlockPage").style.display = "none";
-    }
-    if (document.getElementById("mainPage")) {
-      document.getElementById("mainPage").style.display = "block";
-    }
-
-    // Play background music if user previously interacted
-    if (localStorage.getItem("musicPlaying") === "true") {
-      bgMusic.muted = false;
-      bgMusic.play().catch(err => {
-        console.warn("Autoplay blocked again:", err);
-      });
-    }
-  }
-});
+function closeSurprise() {
+  document.getElementById("surpriseModal").style.display = "none";
+}
