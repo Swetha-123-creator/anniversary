@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Your Gift 🎁</title>
+  <meta charset="UTF-8">
+  <title>Your Surprise 💝</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body style="background:#fff0f5; text-align:center; padding:60px; font-family:'Georgia';">
-  <h1>💌 To My Love</h1>
-  <p style="font-size:20px; margin-top:30px;">
-    These 3 years have been a good part of my life.  
-    I can't wait to create more memories, share more laughter, and hold your hand through it all.  
-    <br>💖 Happy 3rd Anniversary 💖<br>
-  </p>
-  <p style="margin-top:40px;">💝 <b></b>PS: vaygeet Aiswaryechide koode onn poneeyy oru surprise indtaahh 😉</b></p>
+<body>
+  <h1>💌 Your Surprise Is Here!</h1>
+  <p>You’ve made it to the end of the story... but this is just the beginning 💖</p>
+  <img src="final_surprise.jpg" alt="Surprise Image" style="width: 80%; border-radius: 20px; box-shadow: 0 0 15px pink;">
+  <br><br>
+  <a href="index.html" class="open-btn">🔙 Back to Story</a>
+
+  <script>
+    // Continue music if unlocked
+    if (localStorage.getItem("unlocked") !== "true") {
+      location.href = "index.html";
+    }
+  </script>
 </body>
 </html>
