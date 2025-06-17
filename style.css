@@ -1,64 +1,52 @@
 /* -------------------------------------
-   💖 Global Styles
+   💖 Base Styling
 -------------------------------------- */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fff0f5; /* Soft pink background */
-  color: #333;
+  background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  color: #333;
+}
+
+/* -------------------------------------
+   🔓 Unlock Section
+-------------------------------------- */
+.unlock {
   text-align: center;
-  transition: background 0.5s;
-}
-
-/* -------------------------------------
-   💝 Shared Card Style (Unlock, Chapter, Gift)
--------------------------------------- */
-.unlock,
-.chapter,
-.gift-box {
-  background-color: #ffeef3;
-  max-width: 700px;
-  margin: 30px auto;
+  margin-top: 15%;
   padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(255, 105, 180, 0.3);
-  transition: transform 0.3s ease;
+  background-color: #fff5fa;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(255, 105, 180, 0.2);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.unlock:hover,
-.chapter:hover,
-.gift-box:hover {
-  transform: scale(1.02);
-}
-
-/* -------------------------------------
-   🔐 Input & Button Style
--------------------------------------- */
-input {
-  padding: 12px 18px;
+input[type="password"] {
+  padding: 12px;
   font-size: 16px;
-  border: 2px solid #ffb6c1;
+  width: 260px;
+  margin: 10px;
   border-radius: 8px;
+  border: 2px solid #ffb6c1;
   outline: none;
-  margin-top: 10px;
 }
 
-input::placeholder {
-  color: #999;
+input[type="password"]::placeholder {
+  color: #aaa;
 }
 
 button {
-  padding: 12px 20px;
-  margin-top: 15px;
+  padding: 12px 24px;
   font-size: 16px;
   background-color: #ff69b4;
   color: white;
-  font-weight: bold;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+  transition: background-color 0.3s ease, transform 0.2s;
 }
 
 button:hover {
@@ -67,13 +55,36 @@ button:hover {
 }
 
 /* -------------------------------------
-   🖼️ Image Carousel Styling
+   📖 Chapter Styling
+-------------------------------------- */
+.chapter {
+  padding: 40px 20px;
+  text-align: center;
+  animation: fadeIn 2s ease-in;
+  background-color: #fffafc;
+  margin: 40px auto;
+  max-width: 900px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(255, 192, 203, 0.25);
+}
+
+.typewriter {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* -------------------------------------
+   🖼️ Carousel
 -------------------------------------- */
 .carousel {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
+  flex-wrap: wrap;
   margin-top: 20px;
 }
 
@@ -81,8 +92,8 @@ button:hover {
   width: 200px;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
-  transition: transform 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .carousel img:hover {
@@ -90,34 +101,40 @@ button:hover {
 }
 
 /* -------------------------------------
-   ✍️ Romantic Paragraph Styling
+   🎁 Gift Box
 -------------------------------------- */
-.typewriter {
-  text-align: left;
-  font-family: 'Georgia', serif;
-  font-size: 18px;
-  line-height: 1.8;
-  color: #444;
-  padding-top: 10px;
+.gift-box {
+  margin-top: 40px;
 }
 
-/* -------------------------------------
-   🎁 Final Gift Button Styling
--------------------------------------- */
 .open-btn {
   display: inline-block;
-  margin-top: 25px;
-  padding: 14px 28px;
-  background-color: #ff69b4;
+  padding: 15px 30px;
+  font-size: 18px;
   color: white;
-  font-weight: bold;
+  background: #ff1493;
   text-decoration: none;
-  border-radius: 18px;
-  box-shadow: 0 6px 20px rgba(255, 105, 180, 0.4);
-  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 12px;
+  margin-top: 20px;
+  animation: pulse 1.5s infinite;
+  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.4);
+  transition: transform 0.2s;
 }
 
 .open-btn:hover {
-  background-color: #ff1493;
-  transform: scale(1.05);
+  transform: scale(1.08);
+}
+
+/* -------------------------------------
+   ✨ Animations
+-------------------------------------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
 }
