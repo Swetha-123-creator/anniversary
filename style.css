@@ -1,24 +1,24 @@
 /* -------------------------------------
-   💖 Base Styling
+   💖 Base Styles
 -------------------------------------- */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
+  background-color: #ffe6f0; /* Baby pink */
   margin: 0;
   padding: 0;
   color: #333;
+  text-align: center;
 }
 
 /* -------------------------------------
-   🔓 Unlock Section
+   🔐 Unlock Section
 -------------------------------------- */
 .unlock {
-  text-align: center;
-  margin-top: 15%;
   padding: 30px;
-  background-color: #fff5fa;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(255, 105, 180, 0.2);
+  margin-top: 15vh;
+  background-color: #fff0f6;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(255, 105, 180, 0.3);
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
@@ -27,26 +27,26 @@ body {
 input[type="password"] {
   padding: 12px;
   font-size: 16px;
-  width: 260px;
+  width: 250px;
   margin: 10px;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 2px solid #ffb6c1;
   outline: none;
 }
 
 input[type="password"]::placeholder {
-  color: #aaa;
+  color: #999;
 }
 
 button {
-  padding: 12px 24px;
+  padding: 12px 20px;
   font-size: 16px;
   background-color: #ff69b4;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
@@ -55,19 +55,21 @@ button:hover {
 }
 
 /* -------------------------------------
-   📖 Chapter Styling
+   💌 Chapter Section
 -------------------------------------- */
 .chapter {
   padding: 40px 20px;
-  text-align: center;
-  animation: fadeIn 2s ease-in;
-  background-color: #fffafc;
+  background-color: #fff7fb;
   margin: 40px auto;
   max-width: 900px;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(255, 192, 203, 0.25);
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(255, 192, 203, 0.35);
+  animation: fadeIn 2s ease-in;
 }
 
+/* -------------------------------------
+   ✍️ Romantic Paragraph
+-------------------------------------- */
 .typewriter {
   font-style: italic;
   font-size: 18px;
@@ -78,30 +80,42 @@ button:hover {
 }
 
 /* -------------------------------------
-   🖼️ Carousel
+   🖼️ Image Carousel – Same Line and Distance
 -------------------------------------- */
 .carousel {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-top: 20px;
+  gap: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 20px 0;
+}
+
+.carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: #ffb6c1;
+  border-radius: 20px;
 }
 
 .carousel img {
-  width: 200px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  flex-shrink: 0;
 }
 
 .carousel img:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 /* -------------------------------------
-   🎁 Gift Box
+   🎁 Gift Box Button
 -------------------------------------- */
 .gift-box {
   margin-top: 40px;
@@ -109,20 +123,21 @@ button:hover {
 
 .open-btn {
   display: inline-block;
-  padding: 15px 30px;
+  padding: 14px 28px;
   font-size: 18px;
   color: white;
-  background: #ff1493;
+  background: #ff69b4;
   text-decoration: none;
-  border-radius: 12px;
-  margin-top: 20px;
+  border-radius: 16px;
+  margin-top: 25px;
   animation: pulse 1.5s infinite;
   box-shadow: 0 6px 15px rgba(255, 105, 180, 0.4);
   transition: transform 0.2s;
 }
 
 .open-btn:hover {
-  transform: scale(1.08);
+  background-color: #ff1493;
+  transform: scale(1.05);
 }
 
 /* -------------------------------------
