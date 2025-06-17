@@ -1,36 +1,47 @@
-/* General Page Styling */
+/* -------------------------------------
+   💖 Global Styles
+-------------------------------------- */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #fff0f5;
+  background-color: #fff0f5; /* Soft pink background */
   color: #333;
+  margin: 0;
   padding: 20px;
   text-align: center;
   transition: background 0.5s;
 }
 
-/* Shared Styling for Sections */
-.unlock, .chapter, .gift-box {
-  margin: 20px auto;
+/* -------------------------------------
+   💝 Shared Card Style (Unlock, Chapter, Gift)
+-------------------------------------- */
+.unlock,
+.chapter,
+.gift-box {
+  background-color: #ffeef3;
   max-width: 700px;
-  background: #ffeef3;
-  padding: 25px;
-  border-radius: 25px;
-  box-shadow: 0 4px 20px rgba(255, 182, 193, 0.6);
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(255, 105, 180, 0.3);
   transition: transform 0.3s ease;
 }
 
-.unlock:hover, .chapter:hover, .gift-box:hover {
+.unlock:hover,
+.chapter:hover,
+.gift-box:hover {
   transform: scale(1.02);
 }
 
-/* Input and Button */
-input, button {
-  padding: 12px 15px;
+/* -------------------------------------
+   🔐 Input & Button Style
+-------------------------------------- */
+input {
+  padding: 12px 18px;
   font-size: 16px;
-  margin-top: 15px;
   border: 2px solid #ffb6c1;
   border-radius: 8px;
   outline: none;
+  margin-top: 10px;
 }
 
 input::placeholder {
@@ -38,22 +49,37 @@ input::placeholder {
 }
 
 button {
+  padding: 12px 20px;
+  margin-top: 15px;
+  font-size: 16px;
   background-color: #ff69b4;
   color: white;
   font-weight: bold;
+  border: none;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
   background-color: #ff1493;
+  transform: scale(1.05);
 }
 
-/* Carousel Images */
+/* -------------------------------------
+   🖼️ Image Carousel Styling
+-------------------------------------- */
+.carousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
 .carousel img {
-  width: 220px;
+  width: 200px;
   height: auto;
-  margin: 12px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
   transition: transform 0.3s;
@@ -63,30 +89,35 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* Typewriter Paragraph */
+/* -------------------------------------
+   ✍️ Romantic Paragraph Styling
+-------------------------------------- */
 .typewriter {
   text-align: left;
   font-family: 'Georgia', serif;
+  font-size: 18px;
   line-height: 1.8;
-  font-size: 17px;
   color: #444;
+  padding-top: 10px;
 }
 
-/* Final Gift Button */
+/* -------------------------------------
+   🎁 Final Gift Button Styling
+-------------------------------------- */
 .open-btn {
   display: inline-block;
-  padding: 12px 25px;
-  background: #ff69b4;
+  margin-top: 25px;
+  padding: 14px 28px;
+  background-color: #ff69b4;
   color: white;
-  text-decoration: none;
-  border-radius: 16px;
-  margin-top: 20px;
   font-weight: bold;
-  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
-  transition: background 0.3s, transform 0.2s;
+  text-decoration: none;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(255, 105, 180, 0.4);
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .open-btn:hover {
-  background: #ff1493;
+  background-color: #ff1493;
   transform: scale(1.05);
 }
