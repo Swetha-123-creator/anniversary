@@ -1,48 +1,46 @@
-/* Modal */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  padding-top: 80px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.7);
-}
-
-.modal-content {
-  background-color: #fff;
-  margin: auto;
-  padding: 20px;
-  border-radius: 12px;
-  width: 80%;
-  max-width: 600px;
-  text-align: center;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff0f5;
   color: #333;
+  padding: 20px;
+  text-align: center;
 }
 
-.modal-content h2 {
-  color: #e91e63;
+.unlock, .chapter, .gift-box {
+  margin: 20px auto;
+  max-width: 700px;
+  background: #ffeef3;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #ffb6c1;
 }
 
-.modal-img {
-  width: 100%;
-  max-width: 300px;
-  margin-top: 20px;
+input, button {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.carousel img {
+  width: 200px;
+  height: auto;
+  margin: 10px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
+.typewriter {
+  text-align: left;
+  font-family: Georgia, serif;
+  line-height: 1.6;
+}
+
+.open-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff69b4;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  margin-top: 15px;
   font-weight: bold;
-  cursor: pointer;
-}
-
-.close:hover {
-  color: #000;
 }
