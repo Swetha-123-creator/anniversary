@@ -1,23 +1,20 @@
 function unlock() {
-  const passwordInput = document.getElementById("unlockPassword").value;
-  const correctPassword = "26062003";
+  const password = document.getElementById("unlockPassword").value;
+  const correctPassword = "26062003"; // Change this to her DOB
 
-  if (passwordInput === correctPassword) {
+  if (password === correctPassword) {
     document.getElementById("unlockPage").style.display = "none";
     document.getElementById("mainPage").style.display = "block";
 
-    const bgMusic = document.getElementById("bgMusic");
-    bgMusic.muted = false;
-    bgMusic.play().catch(e => console.warn("User interaction needed to play:", e));
+    // Start music
+    const music = document.getElementById("bgMusic");
+    music.muted = false;
+
+    // Show sweet popup
+    setTimeout(() => {
+      alert("Happy 3rd Anniversary My Love 💖\nThis is for all our shared memories and endless love!");
+    }, 1000);
   } else {
-    alert("Oops! Wrong password 💌");
+    alert("Oops! Try again with the correct magic word.");
   }
-}
-
-function openSurprise() {
-  document.getElementById("surpriseModal").style.display = "block";
-}
-
-function closeSurprise() {
-  document.getElementById("surpriseModal").style.display = "none";
 }
