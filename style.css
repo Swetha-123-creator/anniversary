@@ -1,46 +1,61 @@
+/* Base Styling */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #fff0f5;
+  background: linear-gradient(to bottom right, #ffe4ec, #fff0f5);
   color: #333;
-  padding: 20px;
   text-align: center;
+  padding: 20px;
 }
 
-.unlock, .chapter, .gift-box {
-  margin: 20px auto;
+/* Section Containers */
+.unlock, .chapter, .gift-box, #surprisePage {
+  margin: 40px auto;
   max-width: 700px;
-  background: #ffeef3;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 0 0 10px #ffb6c1;
+  background: white;
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.3);
 }
 
-input, button {
+/* Input Box */
+input[type="password"] {
   padding: 10px;
   font-size: 16px;
-  margin-top: 10px;
-}
-
-.carousel img {
-  width: 200px;
-  height: auto;
-  margin: 10px;
   border-radius: 10px;
+  border: 1px solid pink;
 }
 
+/* Buttons */
+button, .open-btn {
+  background-color: hotpink;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:hover, .open-btn:hover {
+  background-color: deeppink;
+}
+
+/* Carousel Images */
+.carousel img {
+  width: 80%;
+  margin: 10px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px pink;
+}
+
+/* Typing Style */
 .typewriter {
   text-align: left;
-  font-family: Georgia, serif;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
-.open-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #ff69b4;
-  color: white;
-  text-decoration: none;
-  border-radius: 12px;
-  margin-top: 15px;
-  font-weight: bold;
+/* Music Player Hidden */
+audio {
+  display: none;
 }
