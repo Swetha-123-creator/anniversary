@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <!-- 🔒 Unlock Page -->
   <div id="unlockPage" class="unlock">
     <h2>💌 A Secret Page Just for You</h2>
@@ -15,11 +14,10 @@
     <button onclick="unlock()">Unlock</button>
   </div>
 
-  <!-- 🎉 Main Page -->
+  <!-- 🎉 Main Content -->
   <div id="mainPage" style="display: none;">
-    
-    <!-- 🎵 Background Music -->
-    <audio id="bgMusic" autoplay muted loop>
+    <!-- Background Music -->
+    <audio id="bgMusic" autoplay loop muted>
       <source src="song.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
@@ -28,8 +26,12 @@
     <div class="chapter">
       <h1>📖 Chapter 1: When We First Met</h1>
       <p class="typewriter">
-        I still remember that day… You and your friends were seated on the stone bench...<br>
-        That playful moment unknowingly marked the beginning of our beautiful journey.
+        "I still remember that day…<br>
+        You and your friends were seated on the stone bench and called us over as part of a light ragging.<br>
+        One of the boys asked me to step forward, gently asked my name and a few details.<br>
+        Then came the teasing — your friends smiled and said,<br>
+        ‘Ponnan avale angane ishtayadekkanu alle...’<br>
+        That playful moment marked the beginning of our beautiful journey."
       </p>
     </div>
 
@@ -47,35 +49,20 @@
     <div class="chapter">
       <h1>🌹 Chapter 3: Today, 3 Years Later</h1>
       <p class="typewriter">
-        After all the fights and ignoring each other, we always end up with so much love again...<br>
-        Thank you for always being on my side, POTTA🫣❤️.
+        Three years of laughter, adventures, and endless love.<br>
+        Even after all the fights, we always end up back in each other's arms.<br>
+        Thank you for always being on my side, POTTA🫣❤️.<br>
+        Thaaneey ee peningalod velland konjan nikkanath ikk ishtallatahhh da pottahh.
       </p>
     </div>
 
     <!-- Final Chapter -->
-    <div class="chapter">
+    <div class="chapter" id="gift">
       <h1>🎁 Final Chapter: Your Surprise</h1>
       <div class="gift-box">
         <p>Click to open your final surprise</p>
-        <button class="open-btn" onclick="openSurprise()">💝 Open Gift 💝</button>
+        <a href="surprise.html" class="open-btn">💝 Open Gift 💝</a>
       </div>
-    </div>
-  </div>
-
-  <!-- 🎉 Surprise Modal -->
-  <div id="surpriseModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeSurprise()">&times;</span>
-      <h2>🎉 Surprise Message</h2>
-      <p>
-        Hey pottahhh!<br>
-        I just want you to know how special you are to me. 3 years together and every moment has been nothing short of magic ✨.<br>
-        You make my world brighter, my heart fuller, and my life a whole lot better.<br><br>
-        I LOVE YOU SO MUCH! 💖<br>
-        Forever yours,<br>
-        🐒💌🐷
-      </p>
-      <img src="im5.jpg" alt="Surprise Image" class="modal-img">
     </div>
   </div>
 
