@@ -1,14 +1,45 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fff0f5;
+  background: linear-gradient(to right, #ffe4e1, #fff0f5);
   margin: 0;
   padding: 0;
+  color: #333;
 }
 
 .unlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #fff0f5;
   text-align: center;
-  margin-top: 100px;
   padding: 20px;
+}
+
+.unlock input {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  border: 2px solid #ff69b4;
+  border-radius: 6px;
+  outline: none;
+}
+
+.unlock button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.unlock button:hover {
+  background: #ff1493;
 }
 
 #mainPage {
@@ -18,53 +49,70 @@ body {
 
 .chapter {
   margin: 40px auto;
-  padding: 20px;
-  background: #ffe4e1;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  max-width: 700px;
+  padding: 30px;
+  background: #fff;
+  border: 2px solid #ffc0cb;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(255, 105, 180, 0.3);
+  max-width: 800px;
   text-align: center;
+}
+
+.chapter h1 {
+  color: #d63384;
+  margin-bottom: 20px;
 }
 
 .carousel {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
   overflow-x: auto;
-  margin-top: 20px;
+  padding: 10px 0;
 }
 
 .carousel img {
-  width: 200px;
+  width: 220px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.05);
 }
 
 .typewriter {
   font-size: 18px;
   line-height: 1.6;
-  color: #333;
+  text-align: left;
+  padding: 0 10px;
+  color: #444;
 }
 
 .gift-box {
-  padding: 20px;
-  background: #fff;
+  padding: 25px;
+  background: #fff0f5;
   border: 2px dashed #ff69b4;
-  border-radius: 10px;
-  margin-top: 20px;
+  border-radius: 12px;
+  margin-top: 25px;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.2);
 }
 
 .open-btn {
-  padding: 10px 20px;
+  padding: 12px 24px;
   background: #ff69b4;
   color: white;
   font-size: 18px;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
+  margin-top: 15px;
 }
 
 .open-btn:hover {
   background: #ff1493;
+  transform: scale(1.05);
 }
