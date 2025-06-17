@@ -1,82 +1,46 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
-  margin: 0;
-  padding: 0;
+  background: #fff0f5;
   color: #333;
-}
-
-.unlock {
-  text-align: center;
-  margin-top: 15%;
   padding: 20px;
+  text-align: center;
 }
 
-input[type="password"] {
+.unlock, .chapter, .gift-box {
+  margin: 20px auto;
+  max-width: 700px;
+  background: #ffeef3;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #ffb6c1;
+}
+
+input, button {
   padding: 10px;
   font-size: 16px;
-  width: 250px;
-  margin: 10px;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #ff69b4;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 8px;
-}
-
-.chapter {
-  padding: 40px;
-  text-align: center;
-  animation: fadeIn 2s ease-in;
-}
-
-.carousel {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+  margin-top: 10px;
 }
 
 .carousel img {
   width: 200px;
   height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .typewriter {
-  font-style: italic;
-  font-size: 18px;
+  text-align: left;
+  font-family: Georgia, serif;
   line-height: 1.6;
-}
-
-.gift-box {
-  margin-top: 30px;
 }
 
 .open-btn {
   display: inline-block;
-  padding: 15px 25px;
-  font-size: 18px;
+  padding: 10px 20px;
+  background: #ff69b4;
   color: white;
-  background: #ff1493;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 12px;
   margin-top: 15px;
-  animation: pulse 1.5s infinite;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px);}
-  to { opacity: 1; transform: translateY(0);}
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.08); }
-  100% { transform: scale(1); }
+  font-weight: bold;
 }
